@@ -1,0 +1,20 @@
+program testexample;
+	{note}
+	var
+		k,sum1,sum2,x:int;
+	const
+		num=20,times=10;
+	begin
+		sum1:=0;    sum2:=0;
+		k:=num;
+		while k>=1 do
+			begin
+				read(x);
+				if x>=0
+					then sum1:=sum1+x;
+				sum2:=sum2+x;
+				k:=k-1;
+			end;
+		write(sum1,times*sum2/num);
+	end;
+#
